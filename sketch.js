@@ -101,8 +101,8 @@ function draw() {
     
     trex.velocityY = trex.velocityY + 0.8;
     
-    spawnClouds();
-    spawnObstacles();
+    gerarNuvens();
+    gerarCactos();
     
     if(grupoCactos.isTouching(trex)){
         gameState = 0;
@@ -131,7 +131,7 @@ function draw() {
   drawSprites();
 }
 
-function spawnObstacles(){
+function gerarCactos(){
  if (frameCount % 60 === 0){
    var cacto = createSprite(610,165,10,40);
    cacto.velocityX = -(6 + pontos/100);
@@ -160,7 +160,7 @@ function spawnObstacles(){
  }
 }
 
-function spawnClouds() {
+function gerarNuvens() {
 
   if (frameCount % 60 === 0) {
     var nuvem = createSprite(600,100,40,10);
