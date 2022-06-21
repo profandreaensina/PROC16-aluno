@@ -105,7 +105,7 @@ function draw() {
     spawnObstacles();
     
     if(grupoCactos.isTouching(trex)){
-        trex.velocityY = -12;
+        gameState = 0;
         //04. play no som da colisao
       
     }
