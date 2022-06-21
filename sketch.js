@@ -63,8 +63,8 @@ function setup() {
   
   console.log("Hello" + 5);
   
-  trex.setCollider("rectangle",0,0,400,trex.height);
-  trex.debug = true
+  trex.setCollider("rectangle",0,0,100,trex.height);
+  trex.debug = false;
   
   pontos = 0;
   
